@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Start">
+   <children>
+      <SplitPane dividerPositions="0.22305764411027568" orientation="VERTICAL" prefHeight="401.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="4.0" layoutY="15.0" prefHeight="76.0" prefWidth="663.0" text=" YouTube Analytics">
+                     <font>
+                        <Font name="Consolas" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="97.0" layoutX="677.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../YouTube_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.21105527638190955" layoutY="-4.0" prefHeight="304.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="btnHome" layoutY="35.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Home" textFill="#fffefe" AnchorPane.bottomAnchor="303.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnAnalytics" layoutY="104.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="YouTube Analytics" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="104.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnSettings" layoutY="197.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Settings" textFill="WHITE" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="197.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Pane id="home" fx:id="paneHome" prefHeight="302.0" prefWidth="465.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label disable="true" text="Тут повинен бути текст" />
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="paneAnalytics" prefHeight="302.0" prefWidth="465.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="2.0" layoutY="1.0" text="Оберіть задачу" />
+                                    <Button layoutX="46.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Отобразить глобальную информацию о канале" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="46.0" layoutY="74.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить глобальную информацию о каналах" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="46.0" layoutY="118.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать каналы по их данным" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="46.0" layoutY="164.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Медиа резонанс" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="46.0" layoutY="209.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить Медиа резонанс" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="46.0" layoutY="254.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать по Медиа резонансу" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="paneSettings" prefHeight="380.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="13.0" layoutY="-9.0" prefHeight="63.0" prefWidth="147.0" text="Настройки" textFill="INDIGO">
+                                       <font>
+                                          <Font name="Consolas Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="173.0" layoutY="73.0" mnemonicParsing="false" style="-fx-background-color: #9370DB;" text="Изменить Использовать кэш" textFill="WHITE" />
+                                    <Button layoutX="173.0" layoutY="122.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="261.0" style="-fx-background-color: #9370DB;" text="Изменить Путь к кэшу" textFill="WHITE" />
+                                    <Button layoutX="38.0" layoutY="173.0" mnemonicParsing="false" style="-fx-background-color: #9370DB;" text="Изменить Отображение времени затраченного не выполнение" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SettingsController">
+   <children>
+      <SplitPane dividerPositions="0.22305764411027568" orientation="VERTICAL" prefHeight="401.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="4.0" layoutY="15.0" prefHeight="76.0" prefWidth="663.0" text=" YouTube Analytics" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font name="Consolas" size="64.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="66.0" fitWidth="97.0" layoutX="677.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="677.0" AnchorPane.rightAnchor="27.263519287109375" AnchorPane.topAnchor="19.0">
+                     <image>
+                        <Image url="@../YouTube_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.21105527638190955" layoutY="-4.0" prefHeight="304.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="btnHome" layoutY="35.0" mnemonicParsing="false" onAction="#moveToHome" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Home" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnAnalytics" layoutY="104.0" mnemonicParsing="false" onAction="#moveToAnalytics" prefHeight="66.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="YouTube Analytics" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="17.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnSettings" layoutY="197.0" mnemonicParsing="false" onAction="#moveToSettings" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Settings" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Pane fx:id="paneSettings" prefHeight="380.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label layoutX="13.0" layoutY="-9.0" prefHeight="63.0" prefWidth="147.0" text="Настройки" textFill="INDIGO">
+                                       <font>
+                                          <Font name="Consolas Bold" size="28.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="btnSaveCache" layoutX="166.0" layoutY="70.0" mnemonicParsing="false" onAction="#moveToSaveCache" prefHeight="45.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Использовать кэш" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Button>
+                                    <Button fx:id="btnPathToCache" layoutX="166.0" layoutY="130.0" mnemonicParsing="false" onAction="#moveToPathCache" prefHeight="44.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Путь к кэшу" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Button>
+                                    <Button fx:id="btnTimeRequest" layoutX="37.0" layoutY="192.0" mnemonicParsing="false" onAction="#moveToTimeRequest" prefHeight="76.0" prefWidth="550.0" style="-fx-background-color: #9370DB;" text="Изменить Отображение времени затраченного не выполнение" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+         <effect>
+            <Glow level="0.0" />
+         </effect>
+      </SplitPane>
+   </children>
+</AnchorPane>
