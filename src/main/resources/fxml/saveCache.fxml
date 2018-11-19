@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingsController">
    <children>
       <SplitPane dividerPositions="0.22305764411027568" orientation="VERTICAL" prefHeight="401.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -54,7 +54,20 @@
                            <children>
                               <Pane id="home" fx:id="paneHome" prefHeight="302.0" prefWidth="465.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label text="Тут повинен бути текст" />
+                                    <Label layoutX="188.0" layoutY="49.0" text="Сохранять кэш?">
+                                       <font>
+                                          <Font name="Consolas" size="32.0" />
+                                       </font></Label>
+                                    <Button fx:id="btnFalse" layoutX="355.0" layoutY="110.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Нет" textFill="WHITE">
+                                       <font>
+                                          <Font name="Consolas" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnTrue" layoutX="180.0" layoutY="109.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Да" textFill="#fff8f8">
+                                       <font>
+                                          <Font name="Consolas" size="18.0" />
+                                       </font>
+                                    </Button>
                                  </children>
                               </Pane>
                            </children>

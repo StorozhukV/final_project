@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SettingsController">
+<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingsController">
    <children>
       <SplitPane dividerPositions="0.22305764411027568" orientation="VERTICAL" prefHeight="401.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -52,22 +52,25 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <Pane id="home" fx:id="paneHome" prefHeight="302.0" prefWidth="465.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <Pane fx:id="paneSettings" prefHeight="380.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label layoutX="188.0" layoutY="49.0" text="Сохранять кэш?">
+                                    <Label layoutX="13.0" layoutY="-9.0" prefHeight="63.0" prefWidth="147.0" text="Настройки" textFill="INDIGO">
                                        <font>
-                                          <Font name="Consolas" size="32.0" />
-                                       </font></Label>
-                                    <Button fx:id="btnFalse" layoutX="355.0" layoutY="110.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Нет" textFill="WHITE">
-                                       <font>
-                                          <Font name="Consolas" size="18.0" />
+                                          <Font name="Consolas Bold" size="28.0" />
                                        </font>
-                                    </Button>
-                                    <Button fx:id="btnTrue" layoutX="180.0" layoutY="109.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Да" textFill="#fff8f8">
+                                    </Label>
+                                    <Button fx:id="btnSaveCache" layoutX="166.0" layoutY="70.0" mnemonicParsing="false" onAction="#moveToSaveCache" prefHeight="45.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Использовать кэш" textFill="WHITE">
                                        <font>
-                                          <Font name="Consolas" size="18.0" />
-                                       </font>
-                                    </Button>
+                                          <Font size="20.0" />
+                                       </font></Button>
+                                    <Button fx:id="btnPathToCache" layoutX="166.0" layoutY="130.0" mnemonicParsing="false" onAction="#moveToPathCache" prefHeight="44.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Путь к кэшу" textFill="WHITE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Button>
+                                    <Button fx:id="btnTimeRequest" layoutX="37.0" layoutY="192.0" mnemonicParsing="false" onAction="#moveToTimeRequest" prefHeight="76.0" prefWidth="550.0" style="-fx-background-color: #9370DB;" text="Изменить Отображение времени затраченного не выполнение" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font></Button>
                                  </children>
                               </Pane>
                            </children>
