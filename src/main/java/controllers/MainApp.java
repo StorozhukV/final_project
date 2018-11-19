@@ -20,7 +20,7 @@ public class MainApp extends Application {
         primaryStage.setTitle("YouTube Analyzer");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-        
+
         primaryStage.setOnCloseRequest(event -> {
             Platform.exit();
             System.exit(0);

@@ -2,6 +2,7 @@ package settings;
 
 import com.alibaba.fastjson.JSON;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Settings {
@@ -52,6 +53,18 @@ public class Settings {
         this.time = time;
     }
     // Method for write settings to file
+
+    // Method for set settings from file
+    private void setSettingsFromFile() {
+        String jsonFromFile = null;
+        MyFileReader reader = new MyFileReader(pathSettings);
+        try {
+            jsonFromFile = reader.read();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        //settings = Settings.parseFromJson(jsonFromFile);
+    }
 
     public void saveSettingsToFile(String json) {
         // Запис json в файл
