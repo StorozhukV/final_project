@@ -12,6 +12,7 @@ public class Settings {
     private final String pathSettings = "./fileWithSettings.json";
 
     // Сериалізація - з об'єкта в JSON
+
     static String serializeObject(Settings set) {
         String json = JSON.toJSONString(set);
 //        System.out.println(json);
