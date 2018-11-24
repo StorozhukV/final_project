@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import settings.Settings;
 
 
 public class MainApp extends Application {
@@ -15,6 +16,8 @@ public class MainApp extends Application {
     }
 
     public void start(Stage primaryStage) throws Exception {
+        Settings settings = new Settings();
+        settings.setSettingsFromFile();
         window = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/home.fxml"));
         primaryStage.setTitle("YouTube Analyzer");

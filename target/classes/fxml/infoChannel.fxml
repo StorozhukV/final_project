@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingsController">
+<AnchorPane maxWidth="900.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AnalyticsController">
    <children>
       <SplitPane dividerPositions="0.22305764411027568" orientation="VERTICAL" prefHeight="401.0" prefWidth="601.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -54,20 +54,23 @@
                            <children>
                               <Pane id="home" fx:id="paneHome" prefHeight="302.0" prefWidth="465.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label layoutX="188.0" layoutY="49.0" text="Сохранять кэш?">
+                                    <Label layoutX="114.0" layoutY="14.0" text="Отобразить глобальную информацию о канале">
                                        <font>
-                                          <Font name="Consolas" size="32.0" />
-                                       </font></Label>
-                                    <Button fx:id="btnFalse" layoutX="355.0" layoutY="110.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Нет" textFill="WHITE">
-                                       <font>
-                                          <Font name="Consolas" size="18.0" />
+                                          <Font name="System Bold" size="18.0" />
                                        </font>
-                                    </Button>
-                                    <Button fx:id="btnTrue" layoutX="180.0" layoutY="109.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #000000;" text="Да" textFill="#fff8f8">
-                                       <font>
-                                          <Font name="Consolas" size="18.0" />
-                                       </font>
-                                    </Button>
+                                    </Label>
+                                    <Label layoutX="152.0" layoutY="54.0" text="ID канала" />
+                                    <TextField layoutX="247.0" layoutY="48.0" />
+                                    <Label layoutX="35.0" layoutY="97.0" text="Имя канала" />
+                                    <Label layoutX="121.0" layoutY="136.0" text="Дата создания канала" />
+                                    <Label layoutX="125.0" layoutY="177.0" text="Кол-во подписчиков" />
+                                    <Label layoutX="95.0" layoutY="215.0" text="Кол-во видео на канале" />
+                                    <Label layoutX="35.0" layoutY="254.0" text="Кол-во просмотров всех видео" />
+                                    <Label layoutX="152.0" layoutY="97.0" prefHeight="27.0" prefWidth="394.0" style="-fx-border-color: #000000;" />
+                                    <Label layoutX="310.0" layoutY="135.0" prefHeight="29.0" prefWidth="236.0" style="-fx-border-color: #000000;" />
+                                    <Label layoutX="310.0" layoutY="176.0" prefHeight="29.0" prefWidth="236.0" style="-fx-border-color: #000000;" />
+                                    <Label layoutX="310.0" layoutY="254.0" prefHeight="29.0" prefWidth="236.0" style="-fx-border-color: #000000;" />
+                                    <Label layoutX="310.0" layoutY="214.0" prefHeight="29.0" prefWidth="236.0" style="-fx-border-color: #000000;" />
                                  </children>
                               </Pane>
                            </children>

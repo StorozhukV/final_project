@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import settings.Settings;
 
 import java.io.IOException;
 import java.net.URL;
@@ -13,11 +14,7 @@ import java.util.ResourceBundle;
 
 public class HomeController implements Initializable {
 
-    @FXML
-    private Button btnHome;
-    private Button btnAnalytics;
-    private Button btnSetting;
-
+    public Button btnSettings;
 
     @FXML
     public void moveToHome(ActionEvent event) {
@@ -38,7 +35,9 @@ public class HomeController implements Initializable {
 
     public void moveToSettings(ActionEvent event) {
         try {
+            Settings.setSettingsFromFile();
             MainApp.window.setScene(new Scene(FXMLLoader.load(getClass().getResource("/fxml/settings.fxml"))));
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -54,33 +54,36 @@
                            <children>
                               <Pane fx:id="paneAnalytics" prefHeight="302.0" prefWidth="465.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label layoutX="2.0" layoutY="1.0" text="Оберіть задачу" />
-                                    <Button layoutX="123.0" layoutY="55.0" mnemonicParsing="false" style="-fx-background-color: #000000;" text="Отобразить глобальную информацию о канале" textFill="WHITE">
+                                    <Label layoutX="235.0" layoutY="6.0" text="Выберите задачу">
+                                       <font>
+                                          <Font size="22.0" />
+                                       </font></Label>
+                                    <Button fx:id="btnChannelInfo" layoutX="123.0" layoutY="55.0" mnemonicParsing="false" onAction="#channelInfo" style="-fx-background-color: #000000;" text="Отобразить глобальную информацию о канале" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="123.0" layoutY="99.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить глобальную информацию о каналах" textFill="WHITE">
+                                    <Button fx:id="btnCompareChannelInfo" layoutX="123.0" layoutY="99.0" mnemonicParsing="false" onAction="#compareChannelInfo" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить глобальную информацию о каналах" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="123.0" layoutY="143.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать каналы по их данным" textFill="WHITE">
+                                    <Button fx:id="btnSortingChannel" layoutX="123.0" layoutY="143.0" mnemonicParsing="false" onAction="#sortingChannel" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать каналы по их данным" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="123.0" layoutY="189.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Медиа резонанс" textFill="WHITE">
+                                    <Button fx:id="btnMediaResonance" layoutX="123.0" layoutY="189.0" mnemonicParsing="false" onAction="#mediaResonance" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Медиа резонанс" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="123.0" layoutY="234.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить Медиа резонанс" textFill="WHITE">
+                                    <Button fx:id="btnCompareMediaResonance" layoutX="123.0" layoutY="234.0" mnemonicParsing="false" onAction="#compareMediaResonance" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сравнить Медиа резонанс" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>
                                     </Button>
-                                    <Button layoutX="123.0" layoutY="279.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать по Медиа резонансу" textFill="WHITE">
+                                    <Button fx:id="btnSortingMediaResonance" layoutX="123.0" layoutY="279.0" mnemonicParsing="false" onAction="#sortingMediaResonance" prefHeight="37.0" prefWidth="372.0" style="-fx-background-color: #000000;" text="Сортировать по Медиа резонансу" textFill="WHITE">
                                        <font>
                                           <Font size="16.0" />
                                        </font>

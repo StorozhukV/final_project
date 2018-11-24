@@ -29,54 +29,30 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <SplitPane dividerPositions="0.21105527638190955" layoutY="-4.0" prefHeight="304.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                           <children>
-                              <Button fx:id="btnHome" layoutY="35.0" mnemonicParsing="false" onAction="#moveToHome" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Home" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Consolas Bold" size="24.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btnAnalytics" layoutY="104.0" mnemonicParsing="false" onAction="#moveToAnalytics" prefHeight="66.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="YouTube Analytics" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Consolas Bold" size="17.0" />
-                                 </font>
-                              </Button>
-                              <Button fx:id="btnSettings" layoutY="197.0" mnemonicParsing="false" onAction="#moveToSettings" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Settings" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <font>
-                                    <Font name="Consolas Bold" size="20.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-                           <children>
-                              <Pane fx:id="paneSettings" prefHeight="380.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <children>
-                                    <Label layoutX="13.0" layoutY="-9.0" prefHeight="63.0" prefWidth="147.0" text="Настройки" textFill="INDIGO">
-                                       <font>
-                                          <Font name="Consolas Bold" size="28.0" />
-                                       </font>
-                                    </Label>
-                                    <Button fx:id="btnSaveCache" layoutX="166.0" layoutY="70.0" mnemonicParsing="false" onAction="#moveToSaveCache" prefHeight="45.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Использовать кэш" textFill="WHITE">
-                                       <font>
-                                          <Font size="20.0" />
-                                       </font></Button>
-                                    <Button fx:id="btnPathToCache" layoutX="166.0" layoutY="130.0" mnemonicParsing="false" onAction="#moveToPathCache" prefHeight="44.0" prefWidth="293.0" style="-fx-background-color: #9370DB;" text="Изменить Путь к кэшу" textFill="WHITE">
-                                       <font>
-                                          <Font size="20.0" />
-                                       </font></Button>
-                                    <Button fx:id="btnTimeRequest" layoutX="37.0" layoutY="192.0" mnemonicParsing="false" onAction="#moveToTimeRequest" prefHeight="76.0" prefWidth="550.0" style="-fx-background-color: #9370DB;" text="Изменить Отображение времени затраченного не выполнение" textAlignment="CENTER" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font size="20.0" />
-                                       </font></Button>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
+                  <Pane fx:id="paneSettings" prefHeight="380.0" prefWidth="623.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="326.0" layoutY="1.0" prefHeight="63.0" prefWidth="147.0" text="Настройки">
+                           <font>
+                              <Font name="Consolas Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="63.0" text="Використовувати кеш?" />
+                        <Label layoutX="75.0" layoutY="90.0" text="true/false" />
+                        <TextField fx:id="txtCache" layoutX="238.0" layoutY="84.0" />
+                        <Label fx:id="lblPathToCache" layoutX="55.0" layoutY="174.0" prefHeight="29.0" prefWidth="409.0" style="-fx-border-color: #000000;" />
+                        <Label layoutX="55.0" layoutY="142.0" text="Шлях до кешу" />
+                        <TextField fx:id="txtPathToCache" layoutX="55.0" layoutY="219.0" prefHeight="39.0" prefWidth="409.0" />
+                        <TextField fx:id="txtRequestTime" layoutX="240.0" layoutY="308.0" />
+                        <Label layoutX="77.0" layoutY="314.0" text="true/false" />
+                        <Label layoutX="22.0" layoutY="278.0" text="Відобразити витрачений час?" />
+                        <Button fx:id="btnSave" layoutX="628.0" layoutY="326.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: #000000;" text="Зберегти зміни" textFill="WHITE" />
+                        <Button fx:id="btnHome" layoutX="621.0" layoutY="10.0" mnemonicParsing="false" onAction="#moveToHome" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: #FF6347;" text="Home" textFill="#fffefe">
+                           <font>
+                              <Font name="Consolas Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
         </items>
